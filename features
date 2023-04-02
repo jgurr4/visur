@@ -1,0 +1,13 @@
+Design Features of Visur
+
+ - Inspired by vim, helix, tmux, warp, intellij IDE, Notion, NeoVIM (Check these programs out to get more ideas)
+
+Features inspired by helix:
+ - auto-complete : commands inside editor
+ - tutorial helper popup windows that show a list of possible commands
+ - file picker which shows you contents of files you are browsing, and is very fast.
+
+warp:
+
+Notion:
+ - the ability to seamlessly write to a document on one device and immediately be able to read changes and begin editing from a different device including tablets or smartphones.
