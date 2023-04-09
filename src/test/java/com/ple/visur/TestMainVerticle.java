@@ -1,10 +1,10 @@
 package com.ple.visur;
 
-import io.vertx.core.Vertx;
-import io.vertx.ext.unit.Async;
-import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.RunTestOnContext;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
+import io.vertx.rxjava3.core.Vertx;
+import io.vertx.rxjava3.ext.unit.Async;
+import io.vertx.rxjava3.ext.unit.TestContext;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -19,7 +19,7 @@ public class TestMainVerticle {
   @Before
   public void deploy_verticle(TestContext testContext) {
     Vertx vertx = rule.vertx();
-    vertx.deployVerticle(new MainVerticle(), testContext.asyncAssertSuccess());
+    vertx.rxDeployVerticle(new MainVerticle(), testContext.asyncAssertSuccess());
   }
 
   @Test

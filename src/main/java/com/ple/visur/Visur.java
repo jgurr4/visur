@@ -20,7 +20,7 @@ public class Visur {
       }
 
       vertx = Vertx.vertx(options);
-//      vertx.deployVerticle(new HttpServerVerticle());
+//      vertx.rxDeployVerticle(new HttpServerVerticle());
     }
 
 
