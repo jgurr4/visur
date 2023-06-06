@@ -37,3 +37,38 @@ New features:
 
 Other:
  - Syntax Highlighting
+ - instant table format inside documents
+
+
+Design:
+
+ - Context: chracter, word, sentence, block/paragraph, document, database etc... 1-9 keys determine these
+ - mapping: Make your own custom modes. Much easier to change keymaps than even vim is.
+ - Macros: More powerful, with conditional logic. Create by doing. (What to do different in case there is a semi-colon or something)
+ - client-server concept: Instead of how vim does it with a single application, having client-server means you can have multiple people editing the same file at once like google docs
+ - Multiple clients: Browser client is first. In browser we'll use something like canvas, in the terminal we'll have a different client set up for that. Using canvas means we can actually have images and icons and things. 
+   Browser client:
+     - Views have to be stored on the server, but the client will keep track of what view it's currently assigned. 
+     - At first just have one view per client, but over time we'll work to add windows and tabs and split views etc...
+     - At first it asks who you are, then cookie is stored therafter every time you open a view.
+ - Eventually we'll use hyperbase once lemon is done it will use that for it's database and file manager. For now we will just use system calls to open and edit files
+ - You can make your own little game inside the editor while you're editing it.
+ - It won't be as bloated as an ide, but not as small as vim. So around 1GB for normal usage. But you can go a lot higher if you do a lot of complex operations.
+ - Live actions: Shell operations in the editor itself. The editor is your shell, and your shell is your editor. 
+ - syntax parser, live syntax editing, and syntax inside of syntax: Manually define or automate defining multiple languages within languages, like MySQL within Java. If the ide is failing to support some syntax, you can manually switch to a view of the syntax editor itself, and you can edit that to tell visur what syntax to give something
+ - IDE basics: 
+   - Go to declaration, finding usages. Therafter we can work on refactor stuff like renaming objects and 
+ - First we'll build the backend CRUD for documents. 
+ - Second we'll design the frontend canvas which renders everything.
+
+shift + v !ls
+build
+build.gradle.kts
+goals.md
+gradle
+gradlew
+gradlew.bat
+LICENSE
+README.adoc
+settings.gradle.kts
+src
